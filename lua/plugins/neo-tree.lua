@@ -29,6 +29,5 @@ return {
         end
       end
     end
-    opts.window.mappings = mappings
   end,
 }
