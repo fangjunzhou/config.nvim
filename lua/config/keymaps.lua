@@ -16,3 +16,6 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("n", "<leader>h", "<cmd>noh<cr>", { desc = "Disable all highlights" })
+map("n", "<C-\\>", function()
+  Util.float_term(nil, { cwd = Util.get_root() })
+end, { desc = "Terminal (root dir)" })
