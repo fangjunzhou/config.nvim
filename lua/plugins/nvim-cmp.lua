@@ -1,5 +1,10 @@
 return {
   "hrsh7th/nvim-cmp",
+  dependencies = {
+    {
+      "kdheepak/cmp-latex-symbols"
+    }
+  },
   opts = function()
     local cmp = require("cmp")
     return {
@@ -30,6 +35,12 @@ return {
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
+        {
+          name = "latex_symbols",
+          option = {
+            strategy = 0,
+          },
+        },
       }),
       formatting = {
         format = function(_, item)
