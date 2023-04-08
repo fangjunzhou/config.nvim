@@ -11,6 +11,9 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- Set the conceallevel.
 opt.conceallevel = 0
 
+-- Set wrap.
+opt.wrap = true
+
 --- Comment to add a comment divider for cpp files.
 ---@param title the title of the comment divider.
 ---@param length the length of the comment divider.
