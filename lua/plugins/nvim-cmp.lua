@@ -38,7 +38,7 @@ return {
         {
           name = "latex_symbols",
           option = {
-            strategy = 0,
+            strategy = 2,
           },
         },
       }),
