@@ -4,9 +4,8 @@ return {
     ensure_installed = {
       "clangd",
       "clang-format",
-      "grammarly-languageserver",
-      "ltex-ls",
       "marksman",
+      "texlab",
       "typescript-language-server",
     },
   },
