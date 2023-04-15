@@ -15,8 +15,7 @@ opt.conceallevel = 0
 opt.wrap = true
 
 --- Comment to add a comment divider for cpp files.
----@param title the title of the comment divider.
----@param length the length of the comment divider.
+---@param opts options from command.
 local function CppCommentDivider(opts)
   -- Get values for opts.
   local title = opts.args
