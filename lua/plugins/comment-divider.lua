@@ -5,8 +5,13 @@ return {
     languageConfig = {
       cpp = {
         lineStart = "/*",
-        lineSeperator = "=-*-=",
+        lineSeperator = "-",
         lineEnd = "*/",
+      },
+      tex = {
+        lineStart = "%",
+        lineSeperator = "-",
+        lineEnd = "%",
       },
     },
   },
