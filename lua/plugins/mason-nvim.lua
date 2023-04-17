@@ -6,6 +6,7 @@ return {
       "clang-format",
       "ltex-ls",
       "marksman",
+      "texlab",
       "typescript-language-server",
     },
   },
