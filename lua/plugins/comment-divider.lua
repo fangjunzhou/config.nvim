@@ -1,5 +1,5 @@
 return {
-  dir = "~/documents/nvim-ext-projects/comment-divider.nvim/",
+  dir = "~/Documents/nvim-ext-projects/comment-divider.nvim/",
   dev = true,
   opts = {
     languageConfig = {
