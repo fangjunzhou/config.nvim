@@ -13,3 +13,6 @@ opt.conceallevel = 0
 
 -- Set wrap.
 opt.wrap = true
+
+-- Set formatoptions
+opt.formatoptions = "jqlnt"
