@@ -1,6 +1,5 @@
 return {
-  dir = "~/Documents/nvim-ext-projects/comment-divider.nvim/",
-  dev = true,
+  "Fangjun-Zhou/comment-divider.nvim",
   opts = {
     languageConfig = {
       cpp = {
