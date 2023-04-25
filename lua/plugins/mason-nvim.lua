@@ -5,6 +5,7 @@ return {
       "clangd",
       "clang-format",
       "marksman",
+      "python-lsp-server",
       "texlab",
       "typescript-language-server",
     },
