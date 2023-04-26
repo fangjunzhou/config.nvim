@@ -10,4 +10,12 @@ return {
       "typescript-language-server",
     },
   },
+  init = function()
+    require("lspconfig").pylsp.setup({
+      filetypes = {
+        "python",
+        "ipynb",
+      },
+    })
+  end,
 }
