@@ -30,6 +30,8 @@ return {
         keymaps = {
           send_motion = "<space>r<cr>",
           visual_send = "<space>r<cr>",
+          send_file = "<space>rf",
+          send_line = "<space>rl",
           interrupt = "<space>r<space>",
         },
       })
