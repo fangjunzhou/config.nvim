@@ -103,6 +103,7 @@ return {
       -- Keybindings
       local opts = { noremap = true, silent = true }
       vim.api.nvim_set_keymap("n", "<F9>", "<CMD>lua require('dap').toggle_breakpoint()<CR>", opts)
+      vim.api.nvim_set_keymap("n", "<S-F9>", "<CMD>lua require('dap').clear_breakpoints()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<F5>", "<CMD>lua require('dap').continue()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<F11>", "<CMD>lua require('dap').step_into()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<S-F11>", "<CMD>lua require('dap').step_out()<CR>", opts)
