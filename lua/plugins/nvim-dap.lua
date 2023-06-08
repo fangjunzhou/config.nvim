@@ -118,7 +118,7 @@ return {
 
       dap.configurations.cpp = {
         {
-          name = "Launch file",
+          name = "launch",
           type = "cppdbg",
           request = "launch",
           program = function()
@@ -126,6 +126,13 @@ return {
           end,
           cwd = "${workspaceFolder}",
           stopAtEntry = false,
+          setupCommands = {
+            {
+              description = "enable pretty-printing for gdb",
+              text = "-enable-pretty-printing",
+              ignoreFailures = true,
+            },
+          },
         },
       }
     end,
