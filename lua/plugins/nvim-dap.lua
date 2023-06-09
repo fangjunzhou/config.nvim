@@ -103,12 +103,12 @@ return {
       -- Keybindings
       local opts = { noremap = true, silent = true }
       vim.api.nvim_set_keymap("n", "<F9>", "<CMD>lua require('dap').toggle_breakpoint()<CR>", opts)
-      vim.api.nvim_set_keymap("n", "<S-F9>", "<CMD>lua require('dap').clear_breakpoints()<CR>", opts)
+      vim.api.nvim_set_keymap("n", "<F21>", "<CMD>lua require('dap').clear_breakpoints()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<F5>", "<CMD>lua require('dap').continue()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<F11>", "<CMD>lua require('dap').step_into()<CR>", opts)
-      vim.api.nvim_set_keymap("n", "<S-F11>", "<CMD>lua require('dap').step_out()<CR>", opts)
+      vim.api.nvim_set_keymap("n", "<F23>", "<CMD>lua require('dap').step_out()<CR>", opts)
       vim.api.nvim_set_keymap("n", "<F10>", "<CMD>lua require('dap').step_over()<CR>", opts)
-      vim.api.nvim_set_keymap("n", "<S-F5>", "<CMD>lua require('dap').terminate()<CR>", opts)
+      vim.api.nvim_set_keymap("n", "<F17>", "<CMD>lua require('dap').terminate()<CR>", opts)
 
       dap.adapters.cppdbg = {
         id = "cppdbg",
