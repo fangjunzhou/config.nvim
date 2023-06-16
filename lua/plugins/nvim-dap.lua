@@ -124,6 +124,10 @@ return {
           program = function()
             return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
           end,
+          args = function()
+            local argumentsStr = vim.fn.input("Command line arguments: ")
+            return vim.split(argumentsStr, " ")
+          end,
           cwd = "${workspaceFolder}",
           stopAtEntry = false,
           setupCommands = {
