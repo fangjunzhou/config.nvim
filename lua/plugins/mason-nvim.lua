@@ -7,6 +7,7 @@ return {
       "cpptools",
       "marksman",
       "python-lsp-server",
+      "rust_analyzer",
       "texlab",
       "typescript-language-server",
     },
