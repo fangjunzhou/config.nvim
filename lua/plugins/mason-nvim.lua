@@ -4,10 +4,11 @@ return {
     ensure_installed = {
       "clangd",
       "clang-format",
+      "cmake-language-server",
       "cpptools",
       "marksman",
       "python-lsp-server",
-      "rust_analyzer",
+      "rust-analyzer",
       "texlab",
       "typescript-language-server",
     },
