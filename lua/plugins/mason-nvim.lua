@@ -4,7 +4,8 @@ return {
     ensure_installed = {
       "clangd",
       "clang-format",
-      "cmake-language-server",
+      "neocmakelsp",
+      "cmakelang",
       "cpptools",
       "marksman",
       "python-lsp-server",
