@@ -4,6 +4,7 @@ return {
     ensure_installed = {
       "clangd",
       "clang-format",
+      "debugpy",
       "neocmakelsp",
       "cmakelang",
       "cpptools",
