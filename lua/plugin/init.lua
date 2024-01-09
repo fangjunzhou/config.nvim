@@ -9,6 +9,13 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" }
   },
   {
+    "akinsho/bufferline.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" }
+  },
+  {
+    "rcarriga/nvim-notify"
+  },
+  {
     "folke/noice.nvim",
     tag = "stable",
     event = "VeryLazy",
