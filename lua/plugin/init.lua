@@ -38,6 +38,10 @@ return {
 
   -- Editor
   {
+    "echasnovski/mini.nvim",
+    version = "*"
+  },
+  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" }
@@ -87,6 +91,10 @@ return {
       dependencies = {
         "nvim-lua/plenary.nvim",
       },
+  },
+  {
+    "numToStr/Comment.nvim",
+    lazy = false
   },
 
   -- Treesitter

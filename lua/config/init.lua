@@ -12,3 +12,6 @@ opt.expandtab = true
 -- Line numebr
 opt.number = true
 opt.relativenumber = true
+
+-- Search case insensitive
+opt.ic = true

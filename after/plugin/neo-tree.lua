@@ -369,9 +369,11 @@ mappings = {
   ["<esc>"] = "cancel", -- close preview or floating neo-tree window
   ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = false } },
   ["l"] = "focus_preview",
-  ["S"] = "open_split",
+  ["S"] = "open_vsplit",
+  -- ["S"] = "open_split",
   -- ["S"] = "split_with_window_picker",
-  ["s"] = "open_vsplit",
+  ["s"] = "",
+  -- ["s"] = "open_vsplit",
   -- ["s"] = "vsplit_with_window_picker",
   ["t"] = "open_tabnew",
   -- ["<cr>"] = "open_drop",
