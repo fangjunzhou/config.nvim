@@ -1,12 +1,12 @@
 return {
-  -- UI Plugins
+  -- ----------------------- UI Plugins ----------------------- --
   {
     "catppuccin/nvim",
     priority = 1000
   },
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" }
+    dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
     "akinsho/bufferline.nvim",
@@ -36,7 +36,7 @@ return {
     tag = "stable"
   },
 
-  -- Editor
+  -- ------------------------- Editor ------------------------- --
   {
     "echasnovski/mini.nvim",
     version = "*"
@@ -92,18 +92,14 @@ return {
       "nvim-lua/plenary.nvim",
     },
   },
-  {
-    "numToStr/Comment.nvim",
-    lazy = false
-  },
 
-  -- Treesitter
+  -- ----------------------- Treesitter ----------------------- --
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate"
   },
 
-  -- LSP
+  -- -------------------------- LSP  -------------------------- --
   {
     "williamboman/mason.nvim"
   },
@@ -114,7 +110,7 @@ return {
     "neovim/nvim-lspconfig"
   },
 
-  -- Coding
+  -- ------------------------- Coding ------------------------- --
   {
     "hrsh7th/vim-vsnip",
     "hrsh7th/vim-vsnip-integ"
@@ -131,5 +127,15 @@ return {
       "hrsh7th/cmp-vsnip",
       "hrsh7th/vim-vsnip"
     }
+  },
+  {
+    "numToStr/Comment.nvim",
+    lazy = false
+  },
+  {
+    "elentok/format-on-save.nvim"
+  },
+  {
+    "fangjunzhou/comment-divider.nvim"
   },
 }

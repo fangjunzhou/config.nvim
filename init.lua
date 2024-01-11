@@ -15,7 +15,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim plugins
-plugins = require("plugin")
+local plugins = require("plugin")
+local opt = {
+  install = {
+    -- Disable install missing plugins
+    missing = false,
+  }
+}
 require("lazy").setup(plugins)
 
 -- Run the configuration

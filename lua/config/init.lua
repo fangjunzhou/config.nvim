@@ -12,6 +12,8 @@ opt.expandtab = true
 -- Line numebr
 opt.number = true
 opt.relativenumber = true
+-- Always enable signcolumn
+opt.signcolumn = "yes"
 
 -- Search case insensitive
 opt.ic = true
