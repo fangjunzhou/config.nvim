@@ -22,7 +22,7 @@ local opt = {
     missing = false,
   }
 }
-require("lazy").setup(plugins)
+require("lazy").setup(plugins, opts)
 
 -- Run the configuration
 require("config")
