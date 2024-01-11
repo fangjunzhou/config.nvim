@@ -21,7 +21,7 @@ require("config")
 local opts = {
   install = {
     -- Disable install missing plugins
-    missing = false,
+    missing = true,
   }
 }
 require("lazy").setup("plugins", opts)

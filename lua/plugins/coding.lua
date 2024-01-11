@@ -29,4 +29,7 @@ return {
   {
     "lewis6991/gitsigns.nvim"
   },
+  {
+    "m4xshen/autoclose.nvim"
+  },
 }
