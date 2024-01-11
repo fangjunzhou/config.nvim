@@ -14,15 +14,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Run the configuration
+require("config")
+
 -- Setup lazy.nvim plugins
-local plugins = require("plugin")
-local opt = {
+local opts = {
   install = {
     -- Disable install missing plugins
     missing = false,
   }
 }
-require("lazy").setup(plugins, opts)
-
--- Run the configuration
-require("config")
+require("lazy").setup("plugins", opts)

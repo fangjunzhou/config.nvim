@@ -29,16 +29,15 @@ keymap.set("n", "<leader><tab>l", "<cmd>tabprevious<cr>", { desc = "Previous Tab
 -- buffers
 keymap.set("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
-keymap.set("n", "<leader>bd", function() MiniBufremove.delete() end, { desc = "Remove Current Buffer" })
 
 -- Exit
-keymap.set("n", "<leader>qq", "<cmd>qa<CR>", { desc = "Quit All" })
+keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
 -- Disable search highlight
-keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "Clear Search Highlight" })
+keymap.set("n", "<leader>h", "<cmd>nohlsearch<cr>", { desc = "Clear Search Highlight" })
 
 -- Neotree
-keymap.set("n", "<leader>e", "<cmd>Neotree<CR>", { desc = "Open NeoTree" })
+keymap.set("n", "<leader>e", "<cmd>Neotree<cr>", { desc = "Open NeoTree" })
 
 -- Lazy Git
-keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Open Lazy Git" })
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open Lazy Git" })
