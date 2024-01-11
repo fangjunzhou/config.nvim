@@ -15,3 +15,6 @@ opt.relativenumber = true
 
 -- Search case insensitive
 opt.ic = true
+
+-- System clipboard
+opt.clipboard = "unnamedplus"
