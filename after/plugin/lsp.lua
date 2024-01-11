@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, { buffer = ev.buf, desc = "List Workspace Folder" })
     -- vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Go Type Definition" })
-    vim.keymap.set("n", "<space>rr", vim.lsp.buf.rename, { buffer = ev.buf, desc = "Rename" })
+    vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename, { buffer = ev.buf, desc = "Rename" })
     vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code Action" })
     vim.keymap.set("n", "<space>f", function()
       vim.lsp.buf.format { async = true }
