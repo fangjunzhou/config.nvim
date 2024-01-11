@@ -32,8 +32,6 @@ return {
     "folke/flash.nvim",
     tag = "stable",
     event = "VeryLazy",
-    ---@type Flash.Config
-    opts = {},
     -- stylua: ignore
     keys = {
       { "s",     mode = { "n", "x", "o" }, function() require("flash").jump() end,              desc = "Flash" },
@@ -51,11 +49,6 @@ return {
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
