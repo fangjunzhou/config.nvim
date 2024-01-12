@@ -1,5 +1,15 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup({
+  ensure_installed = {
+    -- Lua
+    "lua_ls",
+    -- C, C++
+    "clangd",
+    -- Web
+    "gopls",
+    "tsserver"
+  },
+})
 
 local lspconfig = require("lspconfig")
 
@@ -12,6 +22,9 @@ lspconfig.lua_ls.setup({
     }
   }
 })
+lspconfig.clangd.setup({})
+lspconfig.gopls.setup({})
+lspconfig.tsserver.setup({})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
@@ -25,7 +38,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go Declaration" })
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go Definition" })
-    vim.keymap.set("n", "gr", vim.lsp.buf.references, { buffer = ev.buf, desc = "Go References" })
+    vim.keymap.set("n", "gr", function() require('telescope.builtin').lsp_references() end,
+      { buffer = ev.buf, desc = "Go References" })
     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = ev.buf, desc = "Hover" })
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go Implementation" })
     -- vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature Help" })
