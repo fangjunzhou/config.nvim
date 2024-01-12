@@ -78,5 +78,9 @@ return {
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
     build = function() vim.fn["mkdp#util#install"]() end,
+    keys = {
+      { "<leader>mm", mode = { "n" }, "<cmd>MarkdownPreview<cr>",     { desc = "Start MarkdownPreview" } },
+      { "<leader>md", mode = { "n" }, "<cmd>MarkdownPreviewStop<cr>", { desc = "Stop MarkdownPreview" } }
+    }
   },
 }
