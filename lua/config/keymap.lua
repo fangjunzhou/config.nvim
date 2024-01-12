@@ -35,9 +35,3 @@ keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
 -- Disable search highlight
 keymap.set("n", "<leader>h", "<cmd>nohlsearch<cr>", { desc = "Clear Search Highlight" })
-
--- Neotree
-keymap.set("n", "<leader>e", "<cmd>Neotree<cr>", { desc = "Open NeoTree" })
-
--- Lazy Git
-keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open Lazy Git" })

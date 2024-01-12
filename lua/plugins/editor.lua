@@ -58,6 +58,9 @@ return {
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    },
+    keys = {
+      { "<leader>e", mode = { "n" }, "<cmd>NeoTree<cr>", { desc = "Open NeoTree" } }
     }
   },
   {
@@ -66,5 +69,14 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+    keys = {
+      { "<leader>gg", mode = { "n" }, "<cmd>LazyGit<cr>", { desc = "Open Lazy Git" } }
+    }
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
   },
 }
