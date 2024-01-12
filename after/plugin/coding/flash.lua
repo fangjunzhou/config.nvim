@@ -18,7 +18,7 @@ require("flash").setup({
     --   mode = function(str)
     --     return "\\<" .. str
     --   end,
-    mode = "fuzzy",
+    mode = "exact",
     -- behave like `incsearch`
     incremental = false,
     -- Excluded filetypes and custom window filters
