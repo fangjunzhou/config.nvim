@@ -1,3 +1,3 @@
 require("notify").setup({
-  stages = "fade",
+	stages = "fade",
 })
