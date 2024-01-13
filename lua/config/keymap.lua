@@ -4,6 +4,10 @@ vim.g.mapleader = " "
 -- Keymap
 local keymap = vim.keymap
 
+-- Wrapped line movement.
+keymap.set("n", "j", "gj", { remap = true })
+keymap.set("n", "k", "gk", { remap = true })
+
 -- Move to window using the <ctrl> hjkl keys
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
