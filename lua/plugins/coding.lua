@@ -21,9 +21,6 @@ return {
     lazy = false
   },
   {
-    "elentok/format-on-save.nvim"
-  },
-  {
     "fangjunzhou/comment-divider.nvim"
   },
   {
