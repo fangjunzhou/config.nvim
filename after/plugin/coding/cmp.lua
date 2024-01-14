@@ -79,7 +79,7 @@ local dict = require("cmp_dictionary")
 dict.setup({
 	-- The following are default values.
 	exact = -1,
-	first_case_insensitive = false,
+	first_case_insensitive = true,
 	document = false,
 	document_command = "wn %s -over",
 	sqlite = false,
@@ -93,5 +93,3 @@ dict.switcher({
 		en = "~/.config/nvim/dict/en.dict",
 	},
 })
-
-
