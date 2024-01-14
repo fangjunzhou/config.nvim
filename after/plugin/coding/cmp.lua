@@ -45,6 +45,13 @@ cmp.setup({
 		-- { name = "luasnip" }, -- For luasnip users.
 		-- { name = "ultisnips" }, -- For ultisnips users.
 		-- { name = "snippy" }, -- For snippy users.
+		{
+			name = "path",
+		},
+		{
+			name = "dictionary",
+			keyword_length = 2,
+		},
 	}, {
 		{ name = "buffer" },
 	}),
@@ -66,3 +73,25 @@ cmp.setup.cmdline({ "/", "?" }, {
 		{ name = "buffer" },
 	},
 })
+
+local dict = require("cmp_dictionary")
+
+dict.setup({
+	-- The following are default values.
+	exact = -1,
+	first_case_insensitive = false,
+	document = false,
+	document_command = "wn %s -over",
+	sqlite = false,
+	max_items = 5,
+	capacity = 5,
+	debug = false,
+})
+
+dict.switcher({
+	spelllang = {
+		en = "~/.config/nvim/dict/en.dict",
+	},
+})
+
+
