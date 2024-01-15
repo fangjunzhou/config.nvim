@@ -11,6 +11,7 @@ require("mason-tool-installer").setup({
 		"typescript-language-server",
 		-- Documents
 		"marksman",
+		"ltex-ls",
 		-- ----------------------- Formatter  ----------------------- --
 		"stylua",
 	},
@@ -57,6 +58,7 @@ lspconfig.clangd.setup({})
 lspconfig.gopls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.marksman.setup({})
+lspconfig.ltex.setup({})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
