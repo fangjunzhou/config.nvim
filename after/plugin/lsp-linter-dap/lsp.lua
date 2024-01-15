@@ -58,7 +58,19 @@ lspconfig.clangd.setup({})
 lspconfig.gopls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.marksman.setup({})
-lspconfig.ltex.setup({})
+lspconfig.ltex.setup({
+	on_attach = function(client, bufnr)
+		-- rest of your on_attach process.
+		require("ltex_extra").setup({
+			path = ".ltex",
+		})
+	end,
+	settings = {
+		ltex = {
+			checkFrequency = "save",
+		},
+	},
+})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer

@@ -15,4 +15,7 @@ return {
 	{
 		"mhartington/formatter.nvim",
 	},
+	{
+		"barreiroleo/ltex-extra.nvim",
+	},
 }
