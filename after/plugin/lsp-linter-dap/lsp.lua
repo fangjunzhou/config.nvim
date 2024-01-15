@@ -67,7 +67,7 @@ lspconfig.ltex.setup({
 	end,
 	settings = {
 		ltex = {
-			checkFrequency = "save",
+			checkFrequency = "edit",
 		},
 	},
 })
