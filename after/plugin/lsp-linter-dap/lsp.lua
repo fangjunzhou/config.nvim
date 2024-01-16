@@ -68,6 +68,10 @@ lspconfig.ltex.setup({
 	settings = {
 		ltex = {
 			checkFrequency = "edit",
+			additionalRules = {
+				enablePickyRules = true,
+			},
+			languageToolHttpServerUri = "https://languagetool.puffedpescado.com/",
 		},
 	},
 })
