@@ -156,4 +156,17 @@ return {
 			},
 		},
 	},
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		config = true,
+		keys = {
+			{
+				"<c-\\>",
+				mode = { "n" },
+				"<cmd>ToggleTerm<cr>",
+				{ desc = "Toggle Terminal" },
+			},
+		},
+	},
 }
