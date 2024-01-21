@@ -39,3 +39,6 @@ keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
 -- Disable search highlight
 keymap.set("n", "<leader>h", "<cmd>nohlsearch<cr>", { desc = "Clear Search Highlight" })
+
+-- diagnostic
+keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
