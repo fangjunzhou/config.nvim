@@ -22,6 +22,7 @@ local opts = {
 	install = {
 		-- Disable install missing plugins
 		missing = true,
+		colorscheme = { "catppuccin" },
 	},
 }
 require("lazy").setup("plugins", opts)
