@@ -156,4 +156,7 @@ return {
 			},
 		},
 	},
+	{
+		"fangjunzhou/clipboard-image.nvim",
+	},
 }
