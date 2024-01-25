@@ -18,6 +18,7 @@ return {
 	},
 	{
 		"uga-rosa/cmp-dictionary",
+		tag = "v2.2.0",
 	},
 	{
 		"numToStr/Comment.nvim",

@@ -7,8 +7,8 @@ require("mason-tool-installer").setup({
 		-- C, C++
 		"clangd",
 		-- Web
-		"gopls",
-		"typescript-language-server",
+		-- "gopls",
+		-- "typescript-language-server",
 		-- Documents
 		"marksman",
 		"ltex-ls",
