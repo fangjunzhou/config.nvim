@@ -17,6 +17,9 @@ return {
 		},
 	},
 	{
+		"rafamadriz/friendly-snippets",
+	},
+	{
 		"uga-rosa/cmp-dictionary",
 		tag = "v2.2.0",
 	},
