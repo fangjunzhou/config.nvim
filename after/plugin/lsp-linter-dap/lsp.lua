@@ -1,19 +1,24 @@
 require("mason").setup()
 require("mason-tool-installer").setup({
 	ensure_installed = {
-		-- -------------------------- LSP  -------------------------- --
-		-- Lua
+		-- ---------------------------------------------------------- --
+		--                            LSP                             --
+		-- ---------------------------------------------------------- --
+
+		-- -------------------------- Lua  -------------------------- --
 		"lua-language-server",
-		-- C, C++
+		-- ------------------------- C, C++ ------------------------- --
 		"clangd",
-		-- Web
+		-- -------------------------- Web  -------------------------- --
 		-- "gopls",
 		-- "typescript-language-server",
-		-- Documents
+		-- ----------------------- Documents  ----------------------- --
 		"marksman",
 		"ltex-ls",
 		"texlab",
-		-- ----------------------- Formatter  ----------------------- --
+		-- ---------------------------------------------------------- --
+		--                         Formatters                         --
+		-- ---------------------------------------------------------- --
 		"stylua",
 	},
 
@@ -90,6 +95,7 @@ lspconfig.ltex.setup({
 	},
 })
 lspconfig.texlab.setup({})
+lspconfig.jdtls.setup({})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
