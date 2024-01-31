@@ -37,6 +37,9 @@ require("formatter").setup({
 				}
 			end,
 		},
+		java = {
+			require("formatter.filetypes.java").clangformat,
+		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
