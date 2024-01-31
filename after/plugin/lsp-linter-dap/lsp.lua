@@ -12,6 +12,7 @@ require("mason-tool-installer").setup({
 		-- Documents
 		"marksman",
 		"ltex-ls",
+		"texlab",
 		-- ----------------------- Formatter  ----------------------- --
 		"stylua",
 	},
@@ -88,6 +89,7 @@ lspconfig.ltex.setup({
 		},
 	},
 })
+lspconfig.texlab.setup({})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
