@@ -40,7 +40,50 @@ return {
 		"danymat/neogen",
 		dependencies = "nvim-treesitter/nvim-treesitter",
 		config = true,
+		lazy = false,
 		-- Uncomment next line if you want to follow only stable versions
 		-- version = "*",
+		keys = {
+			{
+				"<leader>dd",
+				mode = { "n" },
+				function()
+					require("neogen").generate({ type = "any" })
+				end,
+				desc = "Generate Matching Annotations",
+			},
+			{
+				"<leader>df",
+				mode = { "n" },
+				function()
+					require("neogen").generate({ type = "func" })
+				end,
+				desc = "Generate Function Annotations",
+			},
+			{
+				"<leader>dF",
+				mode = { "n" },
+				function()
+					require("neogen").generate({ type = "file" })
+				end,
+				desc = "Generate File Annotations",
+			},
+			{
+				"<leader>dc",
+				mode = { "n" },
+				function()
+					require("neogen").generate({ type = "class" })
+				end,
+				desc = "Generate Class Annotations",
+			},
+			{
+				"<leader>dt",
+				mode = { "n" },
+				function()
+					require("neogen").generate({ type = "type" })
+				end,
+				desc = "Generate Type Annotations",
+			},
+		},
 	},
 }
