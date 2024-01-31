@@ -121,7 +121,7 @@ return {
 				function()
 					require("neo-tree.command").execute({ toggle = true })
 				end,
-				{ desc = "Toggle NeoTree" },
+				desc = "Toggle NeoTree",
 			},
 		},
 	},
