@@ -40,7 +40,7 @@ return {
 				"<leader>hs",
 				mode = { "n" },
 				function()
-					require("gitsign").stage_hunk()
+					require("gitsigns").stage_hunk()
 				end,
 				desc = "Stage Hunk",
 			},
@@ -48,7 +48,7 @@ return {
 				"<leader>hr",
 				mode = { "n" },
 				function()
-					require("gitsign").reset_hunk()
+					require("gitsigns").reset_hunk()
 				end,
 				desc = "Reset Hunk",
 			},
@@ -56,7 +56,7 @@ return {
 				"<leader>hu",
 				mode = { "n" },
 				function()
-					require("gitsign").undo_stage_hunk()
+					require("gitsigns").undo_stage_hunk()
 				end,
 				desc = "Undo Stage Hunk",
 			},
