@@ -4,6 +4,12 @@ return {
 		build = ":TSUpdate",
 	},
 	{
+		"williamboman/mason.nvim",
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+	},
+	{
 		"neovim/nvim-lspconfig",
 	},
 	{
