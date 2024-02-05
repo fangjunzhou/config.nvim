@@ -37,8 +37,18 @@ require("formatter").setup({
 				}
 			end,
 		},
+		-- Java formatter.
 		java = {
 			require("formatter.filetypes.java").clangformat,
+		},
+		-- Nix formatter.
+		nix = {
+			function()
+				return {
+					exe = "nixpkgs-fmt",
+					stdin = true,
+				}
+			end,
 		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
