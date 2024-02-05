@@ -45,6 +45,7 @@ lspconfig.ltex.setup({
 })
 lspconfig.texlab.setup({})
 lspconfig.jdtls.setup({})
+lspconfig.nil_ls.setup({})
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
