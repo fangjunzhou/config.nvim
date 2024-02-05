@@ -34,6 +34,33 @@ return {
 	},
 	{
 		"lewis6991/gitsigns.nvim",
+		lazy = false,
+		keys = {
+			{
+				"<leader>hs",
+				mode = { "n" },
+				function()
+					require("gitsign").stage_hunk()
+				end,
+				desc = "Stage Hunk",
+			},
+			{
+				"<leader>hr",
+				mode = { "n" },
+				function()
+					require("gitsign").reset_hunk()
+				end,
+				desc = "Reset Hunk",
+			},
+			{
+				"<leader>hu",
+				mode = { "n" },
+				function()
+					require("gitsign").undo_stage_hunk()
+				end,
+				desc = "Undo Stage Hunk",
+			},
+		},
 	},
 	{
 		"m4xshen/autoclose.nvim",
