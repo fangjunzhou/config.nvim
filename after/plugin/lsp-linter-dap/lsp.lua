@@ -1,4 +1,6 @@
-require("mason").setup()
+require("mason").setup({
+	PATH = "append",
+})
 require("mason-tool-installer").setup({
 	ensure_installed = {
 		-- ---------------------------------------------------------- --
