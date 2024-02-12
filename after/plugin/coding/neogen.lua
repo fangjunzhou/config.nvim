@@ -1,0 +1,18 @@
+local ng = require("neogen")
+local map = vim.keymap.set
+
+map("n", "<leader>dd", function()
+	ng.generate({ type = "any" })
+end, { desc = "Generate Matching Annotations" })
+map("n", "<leader>df", function()
+	ng.generate({ type = "func" })
+end, { desc = "Generate Function Annotations" })
+map("n", "<leader>dF", function()
+	ng.generate({ type = "file" })
+end, { desc = "Generate File Annotations" })
+map("n", "<leader>dc", function()
+	ng.generate({ type = "class" })
+end, { desc = "Generate Class Annotations" })
+map("n", "<leader>dt", function()
+	ng.generate({ type = "type" })
+end, { desc = "Generate Type Annotations" })

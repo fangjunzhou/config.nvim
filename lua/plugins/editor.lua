@@ -1,52 +1,11 @@
 return {
 	{
 		"echasnovski/mini.nvim",
-		version = "*",
-		keys = {
-			{
-				"<leader>bd",
-				function()
-					local bd = require("mini.bufremove").delete
-					if vim.bo.modified then
-						local choice =
-							vim.fn.confirm(("Save changes to %q?"):format(vim.fn.bufname()), "&Yes\n&No\n&Cancel")
-						if choice == 1 then -- Yes
-							vim.cmd.write()
-							bd(0)
-						elseif choice == 2 then -- No
-							bd(0, true)
-						end
-					else
-						bd(0)
-					end
-				end,
-				desc = "Delete Buffer",
-			},
-		},
 	},
 	{
 		"nvim-telescope/telescope.nvim",
 		lazy = false,
-		tag = "0.1.5",
 		dependencies = { "nvim-lua/plenary.nvim" },
-		keys = {
-			{
-				"<leader>/",
-				mode = { "n" },
-				function()
-					require("telescope.builtin").live_grep()
-				end,
-				desc = "Live Grep",
-			},
-			{
-				"<leader><space>",
-				mode = { "n" },
-				function()
-					require("telescope.builtin").find_files()
-				end,
-				desc = "Find Files",
-			},
-		},
 	},
 	{
 		"folke/flash.nvim",
@@ -110,29 +69,14 @@ return {
 		branch = "v3.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
-		keys = {
-			{
-				"<leader>e",
-				mode = { "n" },
-				function()
-					require("neo-tree.command").execute({ toggle = true })
-				end,
-				desc = "Toggle NeoTree",
-			},
 		},
 	},
 	{
 		"kdheepak/lazygit.nvim",
-		-- optional for floating window border decoration
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-		},
-		keys = {
-			{ "<leader>gg", mode = { "n" }, "<cmd>LazyGit<cr>", { desc = "Open Lazy Git" } },
 		},
 	},
 	{
@@ -144,20 +88,6 @@ return {
 		init = function()
 			vim.g.mkdp_filetypes = { "markdown" }
 		end,
-		keys = {
-			{
-				"<leader>mm",
-				mode = { "n" },
-				"<cmd>MarkdownPreview<cr>",
-				{ desc = "Start MarkdownPreview" },
-			},
-			{
-				"<leader>md",
-				mode = { "n" },
-				"<cmd>MarkdownPreviewStop<cr>",
-				{ desc = "Stop MarkdownPreview" },
-			},
-		},
 	},
 	{
 		"fangjunzhou/clipboard-image.nvim",
@@ -166,13 +96,5 @@ return {
 		"akinsho/toggleterm.nvim",
 		version = "*",
 		config = true,
-		keys = {
-			{
-				"<c-\\>",
-				mode = { "n" },
-				"<cmd>ToggleTerm<cr>",
-				{ desc = "Toggle Terminal" },
-			},
-		},
 	},
 }

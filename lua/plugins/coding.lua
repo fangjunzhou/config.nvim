@@ -1,9 +1,7 @@
 return {
 	{
 		"L3MON4D3/LuaSnip",
-		-- follow latest release.
-		version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-		-- install jsregexp (optional!).
+		version = "v2.*",
 		build = "make install_jsregexp",
 	},
 	{
@@ -23,7 +21,6 @@ return {
 	},
 	{
 		"uga-rosa/cmp-dictionary",
-		tag = "v2.2.0",
 	},
 	{
 		"numToStr/Comment.nvim",
@@ -35,32 +32,6 @@ return {
 	{
 		"lewis6991/gitsigns.nvim",
 		lazy = false,
-		keys = {
-			{
-				"<leader>hs",
-				mode = { "n" },
-				function()
-					require("gitsigns").stage_hunk()
-				end,
-				desc = "Stage Hunk",
-			},
-			{
-				"<leader>hr",
-				mode = { "n" },
-				function()
-					require("gitsigns").reset_hunk()
-				end,
-				desc = "Reset Hunk",
-			},
-			{
-				"<leader>hu",
-				mode = { "n" },
-				function()
-					require("gitsigns").undo_stage_hunk()
-				end,
-				desc = "Undo Stage Hunk",
-			},
-		},
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -71,49 +42,5 @@ return {
 		dependencies = "nvim-treesitter/nvim-treesitter",
 		config = true,
 		lazy = false,
-		-- Uncomment next line if you want to follow only stable versions
-		-- version = "*",
-		keys = {
-			{
-				"<leader>dd",
-				mode = { "n" },
-				function()
-					require("neogen").generate({ type = "any" })
-				end,
-				desc = "Generate Matching Annotations",
-			},
-			{
-				"<leader>df",
-				mode = { "n" },
-				function()
-					require("neogen").generate({ type = "func" })
-				end,
-				desc = "Generate Function Annotations",
-			},
-			{
-				"<leader>dF",
-				mode = { "n" },
-				function()
-					require("neogen").generate({ type = "file" })
-				end,
-				desc = "Generate File Annotations",
-			},
-			{
-				"<leader>dc",
-				mode = { "n" },
-				function()
-					require("neogen").generate({ type = "class" })
-				end,
-				desc = "Generate Class Annotations",
-			},
-			{
-				"<leader>dt",
-				mode = { "n" },
-				function()
-					require("neogen").generate({ type = "type" })
-				end,
-				desc = "Generate Type Annotations",
-			},
-		},
 	},
 }
