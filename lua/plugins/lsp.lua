@@ -13,6 +13,9 @@ return {
 		"neovim/nvim-lspconfig",
 	},
 	{
+		"mfussenegger/nvim-dap",
+	},
+	{
 		"mhartington/formatter.nvim",
 	},
 	{
