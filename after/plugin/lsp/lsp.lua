@@ -10,7 +10,7 @@ require("mason-tool-installer").setup({
 		-- -------------------------- Lua  -------------------------- --
 		"lua-language-server",
 		-- ------------------------- C, C++ ------------------------- --
-		"clangd",
+		-- "clangd",
 		-- -------------------------- Web  -------------------------- --
 		-- "gopls",
 		-- "typescript-language-server",
